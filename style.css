@@ -41,6 +41,7 @@ header h1{
     margin-right: 35px;
     border-bottom: 2px solid transparent;
     transition: .5s;
+    display: flex;
 }
 .menu a:hover,
 .menu a.active{
