@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+    
+}
+body{
+    height: 100%;
+    background: url(img/Fondo.jpeg)  no-repeat center fixed;
+    background-size:cover;
+    padding: 50px 5%;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header h1{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    line-height: 1;
+    color: white;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+}
+
+.menu a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.menu a:hover,
+.menu a.active{
+    border-color: white;
+    position: fixed;/*mantener fijo en la pantalla sin importar el desplazamiento*/
+}
+.inf{
+    display: flex;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: white;
+    margin: 20px 0; /* Espaciado entre subtemas */
+    background:rgba(255, 255, 255, .1);/* Fondo semitransparente */
+    border: 2px solid rgba(255, 255, 255, .2); /* Borde sutil */
+    backdrop-filter: blur(30px);/* Desenfoque del fondo */
+    border-radius: 30px;    /*bordes redondeados*/
+}
+.inf-detail h1{
+    font-size: 30px;
+    line-height: 1;
+}
+.inf-detail h2{
+    font-size: 20px;
+}
+.inf-detail p{
+    margin: 10px 0 20px;
+}
+.inf-detail ul{
+    margin: 10px 0 20px;
+}
+.inf-detail h3{
+    margin: 10px 0 20px;
+}
+.inf-detail .url{
+    display: flex;
+    align-items: center;
+}
+.inf-detail .url-icon{
+    margin-left: 20px;
+}
+.inf-detail .url-icon a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 8px;
+    color: white;
+    transition: .5s;
+}
+.inf-detail .url-icon a:hover{
+    background: white;
+    box-shadow: 0 0 10px white;
+    color: gray;
+}
+.img-padlock .img-box{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+    overflow: hidden;
+   display: flex;
+}
+.img-padlock .img-box img{
+    display: flex;
+    position: relative;
+    padding-top: 5%;
+    object-fit: cover;
+    margin: auto;
+    width: 70%; /* Reduce el tamaño para que parezca más lejana */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+}
